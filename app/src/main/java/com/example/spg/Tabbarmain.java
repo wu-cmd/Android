@@ -25,7 +25,7 @@ public class Tabbarmain extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        //通过点击事件，切换fragment：
+        //通过点击事件，切换fragment：git
         if (v.getId() == R.id.rb_weChat) {
 
             getSupportFragmentManager().beginTransaction().replace(R.id.fl_container, sy).commit();
