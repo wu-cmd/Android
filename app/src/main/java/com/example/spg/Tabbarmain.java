@@ -10,6 +10,7 @@ import module.Fenlei.Feilei;
 import module.Gwc.Gwc;
 import module.Mine.Mine;
 import module.Sy.Sy;
+import  android.app.Fragment;
 
 public class Tabbarmain extends AppCompatActivity implements View.OnClickListener {
     private Sy sy;
@@ -22,6 +23,8 @@ public class Tabbarmain extends AppCompatActivity implements View.OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tabbarmain);
+        bindViews();
+        initData();
     }
     private void initData() {
         //初始化4个fragment
