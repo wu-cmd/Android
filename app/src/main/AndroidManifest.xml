@@ -11,7 +11,7 @@
         android:theme="@style/Theme.Spg">
         <activity android:name=".Tabbarmain"></activity>
         <activity android:name="module.Sy.Sy" />
-        <activity android:name="module.mine.mine" />
+        <activity android:name="module.Mine.Mine" />
         <activity android:name="module.Gwc.Gwc" />
         <activity android:name="module.Fenlei.Feilei" />
         <activity

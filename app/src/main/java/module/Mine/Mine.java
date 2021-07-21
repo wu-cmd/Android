@@ -1,10 +1,10 @@
-package module.mine;
+package module.Mine;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import com.example.spg.R;
-public class mine extends AppCompatActivity {
+public class Mine extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
