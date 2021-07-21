@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.Spg">
-        <activity android:name=".Sy"></activity>
+        <activity android:name=".Tabbarmain"></activity>
+        <activity android:name="module.Sy.Sy" />
+        <activity android:name="module.mine.mine" />
+        <activity android:name="module.Gwc.Gwc" />
+        <activity android:name="module.Fenlei.Feilei" />
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
