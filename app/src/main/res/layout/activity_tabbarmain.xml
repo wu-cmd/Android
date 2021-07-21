@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Tabbarmain">
     <FrameLayout
         android:id="@+id/fl_container"
@@ -22,12 +23,31 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="微信"
+            android:text="首页"
             android:button="@null"
             android:gravity="center"
             android:textColor="@drawable/tab_selector"
-            android:drawableTop="@drawable/tab_dsicover_selector"/>
-
+            android:drawableTop="@drawable/tab_sy2_selector"/>
+        <RadioButton
+            android:id="@+id/rb_contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="分区"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/tab_selector"
+            android:drawableTop="@drawable/tab_sy2_selector"/>
+        <RadioButton
+            android:id="@+id/rb_discover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="购物车"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/tab_selector"
+            android:drawableTop="@drawable/tab_sy2_selector"/>
         <RadioButton
             android:id="@+id/rb_mine"
             android:layout_width="0dp"
