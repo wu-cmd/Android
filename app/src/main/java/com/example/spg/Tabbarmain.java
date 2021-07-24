@@ -2,6 +2,7 @@ package com.example.spg;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
@@ -17,7 +18,6 @@ public class Tabbarmain extends AppCompatActivity implements View.OnClickListene
     private Feilei feilei;
     private Gwc gwc;
     private Mine mine;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
