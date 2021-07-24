@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this, Tabbarmain.class);
+                Intent intent = new Intent(MainActivity.this, Tabbarmian.class);
                 MainActivity.this.startActivity(intent);
                 MainActivity.this.finish();
 
