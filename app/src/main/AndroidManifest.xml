@@ -17,8 +17,7 @@
             tools:ignore="Instantiatable,MissingClass" />
         <activity android:name="module.Gwc.Gwc"
             tools:ignore="Instantiatable" />
-        <activity android:name="module.Fenlei.Fenlei"
-            tools:ignore="Instantiatable,MissingClass" />
+
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
