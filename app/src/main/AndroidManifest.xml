@@ -14,9 +14,10 @@
         <activity android:name="module.Sy.Sy"
             tools:ignore="Instantiatable" />
         <activity android:name="module.Mine.Mine"
-            tools:ignore="MissingClass" />
-        <activity android:name="module.Gwc.Gwc" />
-        <activity android:name="module.Fenlei.Mine"
+            tools:ignore="Instantiatable,MissingClass" />
+        <activity android:name="module.Gwc.Gwc"
+            tools:ignore="Instantiatable" />
+        <activity android:name="module.Fenlei.Fenlei"
             tools:ignore="Instantiatable" />
         <activity
             android:name=".MainActivity"
