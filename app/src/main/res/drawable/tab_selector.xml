@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--    选中与未选中状态下对字体颜色处理-->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#FA4949" android:state_selected="true" />
+    <item android:color="#DC3E3E" />
 
-    <item android:drawable="@mipmap/gwc" android:state_checked="true" />
-
-    <item android:drawable="@mipmap/gwcw" />
 </selector>
