@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,6 +29,10 @@ public class Tabbarmian extends AppCompatActivity implements View.OnClickListene
     protected ImageView iv_fq;
     protected ImageView iv_gwc;
     protected ImageView iv_mine;
+    protected TextView iv_homea;
+    protected TextView iv_fqa;
+    protected TextView iv_gwca;
+    protected TextView iv_minea;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +50,7 @@ public class Tabbarmian extends AppCompatActivity implements View.OnClickListene
                 .hide (gwc)   //隐藏
                 .commit ();  //提交
         iv_home.setSelected(true);
-
+        iv_homea.setSelected(true);
     }
     //初始化
     private void initView() {
@@ -57,6 +62,10 @@ public class Tabbarmian extends AppCompatActivity implements View.OnClickListene
         iv_fq = findViewById(R.id.iv_fq);
         iv_gwc = findViewById(R.id.iv_gwc);
         iv_mine = findViewById(R.id.iv_mine);
+        iv_homea = findViewById(R.id.iv_homea);
+        iv_fqa = findViewById(R.id.iv_fqa);
+        iv_gwca = findViewById(R.id.gwca);
+        iv_minea = findViewById(R.id.iv_minea);
         mMenuMain.setOnClickListener(this);
         mMenuMe.setOnClickListener(this);
         mMenuFind.setOnClickListener(this);
@@ -77,6 +86,10 @@ public class Tabbarmian extends AppCompatActivity implements View.OnClickListene
                     iv_fq.setSelected(false);
                     iv_gwc.setSelected(false);
                     iv_mine.setSelected(false);
+                    iv_homea.setSelected(true);
+                    iv_fqa.setSelected(false);
+                    iv_gwca.setSelected(false);
+                    iv_minea.setSelected(false);
                     break;
                 case R.id.menu_find:
                     this.getSupportFragmentManager ()
@@ -90,6 +103,10 @@ public class Tabbarmian extends AppCompatActivity implements View.OnClickListene
                     iv_fq.setSelected(true);
                     iv_gwc.setSelected(false);
                     iv_mine.setSelected(false);
+                    iv_homea.setSelected(false);
+                    iv_fqa.setSelected(true);
+                    iv_gwca.setSelected(false);
+                    iv_minea.setSelected(false);
                     break;
                 case R.id.menu_me:
                     this.getSupportFragmentManager ()
@@ -103,6 +120,10 @@ public class Tabbarmian extends AppCompatActivity implements View.OnClickListene
                     iv_fq.setSelected(false);
                     iv_gwc.setSelected(false);
                     iv_mine.setSelected(true);
+                    iv_homea.setSelected(false);
+                    iv_fqa.setSelected(false);
+                    iv_gwca.setSelected(false);
+                    iv_minea.setSelected(true);
                     break;
                 case R.id.gwc:
                     this.getSupportFragmentManager ()
@@ -116,6 +137,11 @@ public class Tabbarmian extends AppCompatActivity implements View.OnClickListene
                     iv_fq.setSelected(false);
                     iv_gwc.setSelected(true);
                     iv_mine.setSelected(false);
+
+                    iv_homea.setSelected(false);
+                    iv_fqa.setSelected(false);
+                    iv_gwca.setSelected(true);
+                    iv_minea.setSelected(false);
                     break;
             }
 

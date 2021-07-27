@@ -33,11 +33,12 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/tab_sy2_selector"/>
             <TextView
+                android:id="@+id/iv_homea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="首页"
                 android:layout_gravity="center"
-                android:textColor="#000000"/>
+                android:textColor="@drawable/color_sy2_selector"/>
 
         </LinearLayout>
 
@@ -54,11 +55,12 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/tab_feilei_selector"/>
             <TextView
+                android:id="@+id/iv_fqa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="分区"
                 android:layout_gravity="center"
-                android:textColor="#000000"/>
+                android:textColor="@drawable/color_feilei_selector"/>
 
         </LinearLayout>
 
@@ -75,11 +77,12 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/tab_gwc_selector"/>
             <TextView
+                android:id="@+id/gwca"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="购物车"
                 android:layout_gravity="center"
-                android:textColor="#000000"/>
+                android:textColor="@drawable/color_gwc_selector"/>
 
         </LinearLayout>
         <LinearLayout
@@ -95,11 +98,12 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/tab_mine_selector"/>
             <TextView
+                android:id="@+id/iv_minea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="我的"
                 android:layout_gravity="center"
-                android:textColor="#000000"/>
+                android:textColor="@drawable/color_mine_selector"/>
 
         </LinearLayout>
 
