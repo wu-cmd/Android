@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 第一个Activity的主题 -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+<style name="FirstActivityTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- 去掉标题栏 -->
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <!-- 设置全屏背景图 -->
+<!--    <item name="android:windowBackground">@mipmap/qdy</item>-->
+    <!--        &lt;!&ndash; 隐藏状态栏 &ndash;&gt;-->
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+</style>
+</resources>

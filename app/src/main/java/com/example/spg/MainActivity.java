@@ -9,6 +9,8 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import module.login.register;
+
 public class MainActivity extends Activity {
 
     @Override
@@ -21,7 +23,7 @@ public class MainActivity extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this, Tabbarmian.class);
+                Intent intent = new Intent(MainActivity.this, register.class);
                 MainActivity.this.startActivity(intent);
                 MainActivity.this.finish();
 

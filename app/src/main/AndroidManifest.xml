@@ -10,21 +10,32 @@
         android:roundIcon="@mipmap/ic_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.Spg">
-        <activity android:name=".Tabbarmian"></activity>
-        <activity android:name="module.Sy.Sy"
+        <activity android:name="module.login.login"></activity>
+
+        <activity
+            android:theme="@style/FirstActivityTheme"
+            android:name="module.login.register"
+            tools:ignore="MissingClass" />
+
+
+        <activity android:name=".Tabbarmian" />
+        <activity
+            android:name="module.Sy.Sy"
             tools:ignore="Instantiatable" />
-        <activity android:name="module.Mine.Mine"
+        <activity
+            android:name="module.Mine.Mine"
             tools:ignore="Instantiatable,MissingClass" />
-        <activity android:name="module.Gwc.Gwc"
+        <activity
+            android:name="module.Gwc.Gwc"
             tools:ignore="Instantiatable" />
-        <activity android:name="module.Fenlei.Fenlei"
+        <activity
+            android:name="module.Fenlei.Fenlei"
             tools:ignore="Instantiatable,MissingClass" />
         <activity
             android:name=".MainActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            android:theme="@style/FirstActivityTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
