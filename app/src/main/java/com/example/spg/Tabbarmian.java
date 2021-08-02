@@ -1,12 +1,13 @@
 package com.example.spg;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -42,10 +43,10 @@ public class Tabbarmian extends AppCompatActivity implements View.OnClickListene
                 .beginTransaction ()
                 .add (R.id.container_content,sy)   //增加容器里面的fragment
                 .add (R.id.container_content,mine)
-                .add (R.id.container_content,feilei)
-                .add (R.id.container_content,gwc)
                 .hide (mine)               //隐藏
+                .add (R.id.container_content,feilei)
                 .hide (feilei)   //隐藏
+                .add (R.id.container_content,gwc)
                 .hide (gwc)   //隐藏
                 .commit ();  //提交
         iv_home.setSelected(true);
