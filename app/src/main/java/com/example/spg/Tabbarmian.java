@@ -39,6 +39,7 @@ public class Tabbarmian extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity_tabbarmain);
         initView();
         //获取管理类
+
         this.getSupportFragmentManager ()
                 .beginTransaction ()
                 .add (R.id.container_content,sy)   //增加容器里面的fragment
