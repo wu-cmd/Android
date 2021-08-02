@@ -10,15 +10,17 @@
         android:roundIcon="@mipmap/ic_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.Spg">
-        <activity android:name="module.login.login"></activity>
+        <activity android:name="module.login.login"
+            tools:ignore="Instantiatable"></activity>
 
         <activity
             android:theme="@style/FirstActivityTheme"
             android:name="module.login.register"
-            tools:ignore="MissingClass" />
+            tools:ignore="Instantiatable,MissingClass" />
 
 
-        <activity android:name=".Tabbarmian" />
+        <activity android:name=".Tabbarmian"
+            tools:ignore="Instantiatable" />
         <activity
             android:name="module.Sy.Sy"
             tools:ignore="Instantiatable" />
