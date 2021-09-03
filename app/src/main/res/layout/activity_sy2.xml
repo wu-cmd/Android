@@ -10,17 +10,18 @@
         android:foreground="@mipmap/sybg">
     </FrameLayout>
     <RelativeLayout
-
         android:id="@+id/fid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+        <!--            上拼购logo图片-->
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:src="@mipmap/logo"
             ></ImageView>
+            <!--        消息-->
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
@@ -33,9 +34,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#000"
         tools:ignore="MissingClass">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vierpage"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
 
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+    </androidx.viewpager.widget.ViewPager>
     </RelativeLayout>
 
 </RelativeLayout>

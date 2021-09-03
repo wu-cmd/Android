@@ -11,13 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Spg">
         <activity android:name="module.login.login"></activity>
-
         <activity
             android:theme="@style/FirstActivityTheme"
             android:name="module.login.register"
             tools:ignore="MissingClass" />
-
-
         <activity android:name=".Tabbarmian" />
         <activity
             android:name="module.Sy.Sy"
@@ -31,13 +28,20 @@
         <activity
             android:name="module.Fenlei.Fenlei"
             tools:ignore="Instantiatable,MissingClass" />
+        <activity android:name=".views.Supermain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:theme="@style/FirstActivityTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
     </application>
 
