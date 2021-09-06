@@ -4,9 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".views.Supermain">
-
     <com.example.spg.views.SobLooperp
-        android:id="@+id/sob_looper_pager"
         android:layout_height="120dp"
         android:layout_width="match_parent">
     </com.example.spg.views.SobLooperp>
