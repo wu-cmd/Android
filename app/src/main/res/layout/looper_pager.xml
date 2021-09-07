@@ -23,30 +23,13 @@ android:paddingBottom="2dp"
 android:text="我是标题"
 android:gravity="center_horizontal">
 </TextView>
-<LinearLayout
+    <LinearLayout
 android:id="@+id/looper_point_container_iv"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:layout_alignParentBottom="true"
-android:layout_centerHorizontal="true">
-<View
-    android:layout_width="5dp"
-    android:layout_height="5dp"
-    android:layout_marginRight="5dp"
-    android:layout_marginLeft="5dp"
-    android:background="#ffffff"
-    ></View>
-<View
-    android:layout_width="5dp"
-    android:layout_height="5dp"
-    android:layout_marginRight="5dp"
-    android:layout_marginLeft="5dp"
-    android:background="#ffffff"></View>
-<View
-    android:layout_width="5dp"
-    android:layout_height="5dp"
-    android:layout_marginRight="5dp"
-    android:layout_marginLeft="5dp"
-    android:background="#ffffff"></View>
+android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
 </LinearLayout>
-    </RelativeLayout>
+</RelativeLayout>

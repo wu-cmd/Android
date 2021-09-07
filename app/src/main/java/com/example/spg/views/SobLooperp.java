@@ -1,6 +1,7 @@
 package com.example.spg.views;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,7 @@ public class SobLooperp extends LinearLayout {
     private TextView textView;
     private LinearLayout pointContainer;
     private BindTitleListener TitleSetListener = null;
+    private PagerAdapter minnerAdapter=null;
 
     public SobLooperp(Context context) {
         this(context,null);
@@ -53,12 +55,13 @@ public class SobLooperp extends LinearLayout {
                 if (TitleSetListener != null ){
                     textView.setText(TitleSetListener.getTitle(position));
                 }
-
+                UpdateIncatorPoint();
             }
 
             @Override
             public void onPageScrollStateChanged(int state) {
                 //状态得改变
+
             }
         });
     }
@@ -74,7 +77,34 @@ public class SobLooperp extends LinearLayout {
     public void setData(PagerAdapter innerAdapter, BindTitleListener listener) {
         this.TitleSetListener = listener;
         mviewPager.setAdapter(innerAdapter);
+        this.minnerAdapter = innerAdapter;
+//        可以得到数据的个数，根据个数创建动态园点
+        UpdateIncatorPoint();
     }
+
+    private void UpdateIncatorPoint() {
+//        添加白点
+        if(minnerAdapter != null){
+            int count = minnerAdapter.getCount();
+            pointContainer.removeAllViews();
+            for (int i = 0; i<count; i++){
+                View point = new View(getContext());
+//                动态点
+                if(mviewPager.getCurrentItem() == i){
+                    point.setBackgroundColor(Color.parseColor("#ff0000"));
+                }else {
+                    point.setBackgroundColor(Color.parseColor("#ffffff"));
+                }
+
+                LayoutParams layoutParams = new LayoutParams(SizeUtils.dip2px(getContext(),10),SizeUtils.dip2px(getContext(),10));
+                layoutParams.setMargins(SizeUtils.dip2px(getContext(),10),0,SizeUtils.dip2px(getContext(),10),0);
+                point.setLayoutParams(layoutParams);
+                pointContainer.addView(point);
+            }
+
+        }
+    }
+
     //    获取三个 }                          控件之后设置相关数据方法
     private void initView() {
         mviewPager = this.findViewById(R.id.looper_pager_vp);
